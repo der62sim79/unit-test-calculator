@@ -27,7 +27,16 @@ namespace Calculator.models
                     return MakeSubtraction(number1, number2);
 
                 case CalculationType.DIVISTION:
+                    //try
+                    //{
+                        return number1 / number2;
                     return MakeDivision(number1, number2);
+                //}
+                //catch (Exception ex)
+                //{
+                //    Console.WriteLine(ex.Message);
+                //}
+
 
                 case CalculationType.MULTIPLICATION:
                     return MakeMultiplication(number1, number2);
@@ -55,7 +64,9 @@ namespace Calculator.models
 
         private decimal MakeDivision(decimal number1, decimal number2)
         {
-            return number1 / number2;
+         
+                return number1 / number2;
+                
         }
     }
 }
